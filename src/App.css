@@ -3,3 +3,7 @@ body {
   box-sizing: border-box;
   padding: 20px 60px;
 }
+a {
+  color: #0000;
+  text-decoration: none;
+}
