@@ -3,7 +3,11 @@ import { Link } from 'react-router-dom';
 import {connect} from 'react-redux';
 import { auth } from '../../firebase/firebase.utils'
 
+import  CartIcon from '../CartIcon/CartIcon';
+import CartDropdown from '../Cart/CartDropdown';
+
 import {ReactComponent as Logo } from '../../assets/Crown.svg';
+
 import './Header.scss';
 
 
@@ -22,7 +26,9 @@ const Header = ({ currentUser }) => (
                 onClick={() => auth.signOut()}>SIGN OUT</div>) : 
               ( <Link className="option" to='/sign'>SIGN IN</Link>)
             }
+        <CartIcon/>
         </div>
+        <CartDropdown/>
     </div>
 )
 const mapStateToProps = state => ({
