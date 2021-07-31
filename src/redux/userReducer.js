@@ -1,15 +1,16 @@
 const initialState = {
-  currentUser: null
-}
+  currentUser: null,
+};
 
 const userReducer = (state = initialState, action) => {
-  switch(action.type) {
+  switch (action.type) {
     case 'SET_CURRENT_USER':
       return {
-        ...state, 
-        payload:action.payload}
-      default: 
-        return state;  
+        ...state,
+        currentUser: action.payload,
+      };
+    default:
+      return state;
   }
-}
+};
 export default userReducer;
