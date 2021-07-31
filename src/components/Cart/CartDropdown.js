@@ -9,7 +9,7 @@ const CartDropdown = () => {
     <div className="cart-dropdown">
       <div className="cart-items">
       </div>
-        <CustomButton>Go to Checkout</CustomButton>
+        <CustomButton inverted>Go to Checkout</CustomButton>
     </div>
   )
 }
